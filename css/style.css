@@ -1,0 +1,96 @@
+:root {
+  --page-bg-color: #f9f9f9;
+  --primary-text-color: #212121;
+  --card-set-gap: 20px;
+  --card-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.5);
+}
+
+body {
+  background-color: var(--page-bg-color);
+  color: var(--primary-text-color);
+  line-height: 1.5;
+}
+
+h1
+h2 
+h3 
+h4 
+h5 
+h6 
+
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: 160px;
+}
+
+.abacuses :hover {
+  border-radius: 5px;
+  padding-bottom: 10px;
+  margin: 5px;
+  width: 60px;
+  height: 20px;
+  background-color: rgb(146, 220, 236);
+  outline: 1px solid rgb(100, 22, 92);
+}
+
+.pages-text {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/*container*/
+
+.container {
+  width: 960px;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  /* background-color: rgb(142, 242, 151);*/
+}
+
+/*card-set*/
+
+.card-set {
+  /*outline: 1px solid tomato;*/
+  padding: 0;
+  margin: 0;
+  margin-top: calc(-1 * var(--card-set-gap));
+  margin-left: calc(-1 * var(--card-set-gap));
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-set > .item {
+  /* outline: 1px solid teal;*/
+  flex-basis: calc(100% / 3 - var(--card-set-gap));
+  margin-left: var(--card-set-gap);
+  margin-top: var(--card-set-gap);
+}
+
+.card-thumb {
+  outline: 1px solid red;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card {
+  box-shadow: var(--card-shadow);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card-content {
+  padding: 10px;
+}
+
+.card-text {
+  margin-top: 10px;
+}
