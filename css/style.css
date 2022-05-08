@@ -1,5 +1,5 @@
 :root {
-  --page-bg-color: #f9f9f9;
+  /*--page-bg-color: #f9f9f9;*/
   --primary-text-color: #212121;
   --card-set-gap: 20px;
   --card-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.5);
@@ -20,7 +20,12 @@ h1 h2 h3 h4 h5 h6 p {
   height: 200px;
   border-radius: 50%;
   margin-left: 500px;
+  position: relative;
+  background-color: #f9f9f9;
+  opacity: 1;
 }
+
+
 
 img {
   display: block;
@@ -38,6 +43,7 @@ img {
   outline: 1px solid rgb(100, 22, 92);
 }
 
+
 .pages-text {
   padding-left: 5px;
   padding-right: 5px;
@@ -53,6 +59,7 @@ img {
   height: auto;
   margin-left: auto;
   margin-right: auto;
+  
   /* background-color: rgb(142, 242, 151);*/
 }
 
@@ -95,3 +102,17 @@ img {
 .card-text {
   margin-top: 10px;
 }
+
+
+
+
+
+.link {
+  background-color: tomato;
+  color: white;
+
+  /* ✅ Работает */
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-right: 50px;
+  margin-left: 50px;
