@@ -5,8 +5,6 @@ body {
     font-weight: 500;
     color: #495057;
 }
-.wrapper {
-}
 
 
 .articles {
@@ -19,8 +17,7 @@ body {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
 }
-.pages-button {
-}
+
 .articles__title {
     font-size: 1.5625rem;
     margin-bottom: 2.8125rem;
@@ -73,8 +70,7 @@ body {
     }
 }
 
-.article {
-}
+
 .article__image {
     display: block;
     margin-bottom: 1.875rem;
@@ -98,8 +94,6 @@ body {
 
 }
 
-
-
 .article__body {
     display: grid;
     gap: 0.9375rem;
@@ -109,8 +103,7 @@ body {
     font-weight: 300;
     line-height: 1.6;
 }
-.article__title {
-}
+
 
 .article__link-title {
     color: #212529;
