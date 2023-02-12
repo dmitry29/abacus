@@ -4,14 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,500&display=swap" rel="stylesheet"/>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/css/reset.css" />
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
     
     <title>Document</title>
   </head>
   <body>
-    <header>
+    <!-- <header>
     
       <nav>
         <img class="logo" src="./images/logo.gif" alt="logo">
@@ -22,9 +24,141 @@
           <li><a class="pages-button" href="./trainer.html" >page-4</a></li>
         </ul>
       </nav>
-    </header> 
+    </header>  -->
 
-    <div class="container">
+    <div class="wrapper">
+       <main class="page">
+        <section class="articles">
+          <div class="articles__container">
+            <h1 class="articles__title">Articles</h1>
+            <div class="articles__filter filter-articles">
+              <button data-filter="*" class="filter-articles__item active" type="button">Show All</button>
+              <button data-filter="tech" class="filter-articles__item" type="button">Technology</button>
+              <button data-filter="culture" class="filter-articles__item" type="button">Culture</button>
+            </div>
+            <div class="articles__items">
+              <article data-filter="tech" class="articles__item article">
+                <a href="#" class="article__image">
+                  <img src="images/p1.jpg" alt="Image">
+                </a>
+                <div class="article__body">
+                  <div class="article__date">29.Jun.2021</div>
+                  <h4 class="article__title">
+                    <a href="#" class="article__link-title">Colorite</a>
+                  </h4>
+                  <div class="article__text">
+                    <p>Дуже якісні та гарні абакуси!</p>
+                  </div>
+                </div>
+              </article>
+              <article data-filter="culture" class="articles__item article">
+                <a href="#" class="article__image">
+                  <img src="images/2.jpg" alt="Image">
+                </a>
+                <div class="article__body">
+                  <div class="article__date">29.Jun.2021</div>
+                  <h4 class="article__title">
+                    <a href="#" class="article__link-title">Colorite</a>
+                  </h4>
+                  <div class="article__text">
+                    <p>Дуже якісні та гарні абакуси!</p>
+                  </div>
+                </div>
+              </article>
+              <article data-filter="tech" class="articles__item article">
+                <a href="#" class="article__image">
+                  <img src="images/3.jpg" alt="Image">
+                </a>
+                <div class="article__body">
+                  <div class="article__date">29.Jun.2021</div>
+                  <h4 class="article__title">
+                    <a href="#" class="article__link-title">Colorite</a>
+                  </h4>
+                  <div class="article__text">
+                    <p>Дуже якісні та гарні абакуси!</p>
+                  </div>
+                </div>
+              </article>
+              <article data-filter="culture" class="articles__item article">
+                <a href="#" class="article__image">
+                  <img src="images/4.jpg" alt="Image">
+                </a>
+                <div class="article__body">
+                  <div class="article__date">29.Jun.2021</div>
+                  <h4 class="article__title">
+                    <a href="#" class="article__link-title">Colorite</a>
+                  </h4>
+                  <div class="article__text">
+                    <p>Дуже якісні та гарні абакуси!</p>
+                  </div>
+                </div>
+              </article>
+              <article data-filter="tech" class="articles__item article">
+                <a href="#" class="article__image">
+                  <img src="images/5.jpg" alt="Image">
+                </a>
+                <div class="article__body">
+                  <div class="article__date">29.Jun.2021</div>
+                  <h4 class="article__title">
+                    <a href="#" class="article__link-title">Colorite</a>
+                  </h4>
+                  <div class="article__text">
+                    <p>Дуже якісні та гарні абакуси!</p>
+                  </div>
+                </div>
+              </article>
+              <article data-filter="culture" class="articles__item article">
+                <a href="#" class="article__image">
+                  <img src="images/6.jpg" alt="Image">
+                </a>
+                <div class="article__body">
+                  <div class="article__date">29.Jun.2021</div>
+                  <h4 class="article__title">
+                    <a href="#" class="article__link-title">Colorite</a>
+                  </h4>
+                  <div class="article__text">
+                    <p>Дуже якісні та гарні абакуси!</p>
+                  </div>
+                </div>
+              </article>
+              <article data-filter="tech" class="articles__item article">
+                <a href="#" class="article__image">
+                  <img src="images/7.jpg" alt="Image">
+                </a>
+                <div class="article__body">
+                  <div class="article__date">29.Jun.2021</div>
+                  <h4 class="article__title">
+                    <a href="#" class="article__link-title">Colorite</a>
+                  </h4>
+                  <div class="article__text">
+                    <p>Дуже якісні та гарні абакуси!</p>
+                  </div>
+                </div>
+              </article>
+              <article data-filter="culture" class="articles__item article">
+                <a href="#" class="article__image">
+                  <img src="images/8.jpg" alt="Image">
+                </a>
+                <div class="article__body">
+                  <div class="article__date">29.Jun.2021</div>
+                  <h4 class="article__title">
+                    <a href="#" class="article__link-title">Colorite</a>
+                  </h4>
+                  <div class="article__text">
+                    <p>Дуже якісні та гарні абакуси!</p>
+                  </div>
+                 </div>
+               </article>
+              </div>
+            </div>
+          </section>
+        </main>
+     </div>
+          <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+          <script src="js/script.js"></script>
+        </body>
+      </html>
+    <!-- <div class="container">
       
       <ul class="card-set">
         <li class="item">
@@ -106,8 +240,6 @@
           </article>
         </li>
       </ul>
-    </div>
+    </div>  -->
     
     
-  </body>
-</html>
