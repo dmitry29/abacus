@@ -201,3 +201,16 @@ body{
   transition-delay: 0.75s;
   
 }
+
+/* ----------------- */
+
+#clock {
+	position: absolute;
+	top: 95%;
+	left: 95%;
+	transform: translate(-50%, -50%);
+	width: calc(100vw - 4px);
+	max-width: 100px;
+}
+
+/* ------------------ */
