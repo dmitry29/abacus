@@ -1,51 +1,64 @@
 "use strict"
 
+const card = [
+  {
+    img: "1.jpg",
+    name: "Кольоровий",
+    h3: "Мережі :"
 
-function imagesInit() {
-    const images = document.querySelectorAll('.article__image');
-    if (images.length){
-        images.forEach(image => {
-            const imageItem = image.querySelector('img');
-            const padding = imageItem.offsetHeight / imageItem.offsetWidth * 100;
-            image.style.paddingBottom = `${padding}%`;
-            imageItem.classList.add('init');
-        });
-    }
-}
+  },
 
-function gridInit(){
-    const items = document.querySelector('.articles__items');
-    const itemsGrid = new Isotope(items,{
-        itemSelector: '.article',
-        masonry: {
-            fitWidth: true,
-            gutter: 20
-        }
-    });
+  {
+    img: "2.jpg",
+    name: "Жовтий з чорним",
+    h3: "Мережі :"
 
-    document.addEventListener('click', documentActions);
+  },
 
-    function documentActions(e) {
-      const targetElement = e.target;
-      if (targetElement.closest('.filter-articles__item')){
-        const filterItem = targetElement.closest('.filter-articles__item');
-        const filterValue = filterItem.dataset.filter;
-        const filterActiveItem = document.querySelector('.filter-articles__item.active');
+  {
+    img: "3.jpg",
+    name: "Рожевий з чорним",
+    h3: "Мережі :"
 
-        filterValue === "*" ? itemsGrid.arrange({filter:``}) : 
-                 itemsGrid.arrange({filter:`[data-filter="${filterValue}"]`})
+  },
 
-                 filterActiveItem.classList.remove('active');
-                 filterItem.classList.add('active');
+  {
+    img: "4.jpg",
+    name: "Чорний з рожевим",
+    h3: "Мережі :"
 
-        e.preventDefault();
-      }
-    }
-}
+  },
 
-window.addEventListener('load', windowLoad);
+  {
+    img: "5.jpg",
+    name: "Жовтий з зеленим",
+    h3: "Мережі :"
 
-function windowLoad() {
-    imagesInit();
-    gridInit();
-}
+  },
+
+  {
+    img: "6.jpg",
+    name: "Синій з рожевим",
+    h3: "Мережі :"
+
+  },
+
+  {
+    img: "7.jpg",
+    name: "Жовтий з блакитним",
+    h3: "Мережі :"
+
+  },
+
+  {
+    img: "8jpg",
+    name: "Зелений з жовтим",
+    h3: "Мережі :"
+
+  },
+
+];
+
+
+
+
