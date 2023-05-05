@@ -1,5 +1,7 @@
-import "https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js";
-"use strict"
+// "use strict"
+
+
+
 
 const card = [
   {
